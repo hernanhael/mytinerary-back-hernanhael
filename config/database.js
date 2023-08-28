@@ -1,6 +1,8 @@
 import mongoose from "mongoose"; 
 
-mongoose.connect(process.env["DATABASE_URL"])
+let uri_link = process.env.DATABASE_URL;
+
+mongoose.connect(uri_link)
     .then((() => { 
         console.log("Database connected.");
     }))

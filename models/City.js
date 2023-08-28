@@ -1,8 +1,8 @@
-import { Schema, model } from "mongoose"; 
+import { Schema, model, Types } from "mongoose"; 
 
 let collection = "Cities"; 
 
-let citySchema = Schema({ 
+let citySchema = new Schema({ 
     city: { type: String, required: true },
     country: { type: String, required: true },
     foundation: { type: Date, required: true },
