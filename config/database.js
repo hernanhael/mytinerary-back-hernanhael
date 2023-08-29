@@ -1,4 +1,4 @@
-import mongoose from "mongoose"; 
+import mongoose from "mongoose" 
 
 let uri_link = process.env.DATABASE_URL;
 
@@ -8,4 +8,5 @@ mongoose.connect(uri_link)
     }))
     .catch(() => { 
         console.log("Database connection failed.");
-    });
+    }); 
+

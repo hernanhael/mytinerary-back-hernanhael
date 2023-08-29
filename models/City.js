@@ -5,7 +5,7 @@ let collection = "Cities";
 let citySchema = new Schema({ 
     city: { type: String, required: true },
     country: { type: String, required: true },
-    foundation: { type: Date, required: true },
+    foundation: { type: Number, required: true },
     population: { type: Number, required: true },
     photo: { type: String, required: true }, 
     description: { type: String, required: true}
