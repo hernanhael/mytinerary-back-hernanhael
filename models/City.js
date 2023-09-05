@@ -1,7 +1,5 @@
 import { Schema, model, Types } from "mongoose"; 
 
-let collection = "Cities"; 
-
 let citySchema = new Schema({ 
     city: { type: String, required: true },
     country: { type: String, required: true },
@@ -13,5 +11,5 @@ let citySchema = new Schema({
     timestamps: true,
 }); 
 
-let City = model(collection, citySchema); 
+let City = model("citie", citySchema); 
 export default City; 
